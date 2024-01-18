@@ -1,53 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <!-- Thank you ChatGPT -->
-<head>
-	<title>Redirect Page</title>
-	<style>
-		body {
-			background-color: #111;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			margin: 0;
-			padding: 0;
-			color: white;
-			font-family: "Roboto", Arial, Helvetica, sans-serif;
-			font-size: 24px;
-		}
+  <head>
+    <script type="text/javascript" src="colour.js"></script>
+    <script type="text/javascript" src="start.js"></script>
+    <script>
+      canada()
+        </script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Canada Math</title>
+    <meta
+      name="description"
+      content="Search to instantly recieve math help from experts worldwide!"
+    />
+    <meta
+      name="keywords"
+      content="math, school, education"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
 
-		.loader-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
+<link rel="icon" href="/favicon.ico" media="(prefers-color-scheme:no-preference)">
+<link rel="icon" href="/favicon-dark.ico" media="(prefers-color-scheme:dark)">
+<link rel="icon" href="/favicon.ico" media="(prefers-color-scheme:light)">
 
-		.loader {
-			border: 16px solid white;
-			border-radius: 50%;
-			border-top: 16px solid gray;
-			border-bottom: 16px solid gray;
-			width: 120px;
-			height: 120px;
-			animation: spin 2s linear infinite;
-		}
+    <link rel="stylesheet" href="index.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I find a reliable Math Resource?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Here, at Canada Math, we have expect curated answers and guides for all ages!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who are these experts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Canada Math was started at Vancouver High School, but nearby collage students contribute to our ever-growing database."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if Canada Math is not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Please go outside"
+            }
+          }
+        ]
+      }
+    </script>
+    <script async src="//static.getclicky.com/101400131.js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101400131ns.gif" /></p></noscript>
+    <meta name="google-site-verification" content="KRBrWxTtWjeqi6dwt0SmZX2KWABnOCOxuRdNOvTA9cs" />
+  </head>
 
-		@keyframes spin {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(360deg); }
-		}
-	</style>
-</head>
-<body>
-	<div class="loader-container">
-		<div class="loader"></div>
-		<br>
-		<div class="subtitle">Preparing Canada Math</div>
-	</div>
-	<script>
-		window.location.href = "https://canadamath.azurewebsites.net/";
-	</script>
-</body>
+  <body>
+    <div id="iframe-container"></div>
+    <div
+      title="Canada Math Logo"
+      class="flex-center logo-wrapper header-center"
+    >
+      <img class="logo" src="uv.png" alt="CM Logo" />
+      <h1>Canada Math</h1>
+    </div>
+    <div class="flex-center desc">
+      <p>
+        Coming soon...
+      </p>
+    </div>
+
+
+    <div id="cookieConsentPopup" class="hidden">
+      <div>
+        <p>Welcome to Canada Math! We are very hungry, you should feed us some cookies!
+          <p>
+        <button id="acceptCookiesButton">Accept Cookies</button>
+      </div>
+    </div>
+
+    
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var cookieConsentPopup = document.getElementById('cookieConsentPopup');
+  var acceptCookiesButton = document.getElementById('acceptCookiesButton');
+
+  acceptCookiesButton.addEventListener('click', function() {
+      // Set a cookie to remember that the user has accepted cookies
+      document.cookie = 'cookiesAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+
+      // Hide the cookie consent popup
+      cookieConsentPopup.classList.add('hidden');
+  });
+
+  // Check if the user has already accepted cookies
+  if (document.cookie.indexOf('cookiesAccepted=true') === -1) {
+      // If not, show the cookie consent popup
+      cookieConsentPopup.classList.remove('hidden');
+  }
+});
+</script>
+<script>
+        function openIframe() {
+        if ( window.location !== window.parent.location ) {
+          var strWindowFeatures = "menubar=no,location=no,height=649,width=1366,directories=no,status=no,scrollbars=no,resizable=no";
+          var URL = "https://white-tree-0dfe7f810.2.azurestaticapps.net/";
+          var win = window.open(URL, "_blank", strWindowFeatures);
+
+        } else {
+        var iframeContainer = document.getElementById("iframe-container");
+        iframeContainer.style.display = "block";
+        iframeContainer.innerHTML = "<iframe src='/'></iframe>";
+        }
+      }   
+</script>
+    <footer>
+      <a
+      title="Private Mode"
+      onclick="openIframe()"
+      ><p id="pmtoggle">Private Mode</p></a>
+      <style>
+        body {
+        background-color: #111;
+        background-image: none;
+        }
+        .background-link {
+        color: white;
+        text-decoration: none;
+        }
+        </style>
+      <a
+      href="#" class="background-link" onclick="changeBackground()">
+      Change Background
+      </a>
+      <a
+      title="License information"
+      href="credits.html"
+      style="margin-left: auto"
+      >Credits</a>
+      <span>Canada Math &copy; 2022</span>
+    </footer>
+  </body>
 </html>

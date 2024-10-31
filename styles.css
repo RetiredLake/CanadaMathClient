@@ -26,23 +26,28 @@ body {
   text-align: left;
 }
 
-.logo img {
-  width: 80px;
-  margin: 0 auto 20px;
+.logo {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
 }
 
-.logo:hover {
+.logo img {
+  width: 80px;
+}
+
+.logo:hover img {
   animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
   from {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-  transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  }
+}
 
 h1 {
   font-size: 32px;

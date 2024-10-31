@@ -1,1 +1,1 @@
-This repo does not contain Ultraviolet Code. For that project, go to [Canada Math](github.com/retiredlake/canadamath)
+This repo does not contain Ultraviolet Code. For that project, go to [Canada Math](https://github.com/retiredlake/canadamath)

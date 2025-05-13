@@ -123,3 +123,70 @@ p {
 .app-store strong, .google-play strong {
   font-size: 14px;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p, .code {
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+
+  .app-stores {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .app-store img,
+  .mac-store img,
+  .google-play img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .app-stores {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .app-store, .google-play, .mac-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-store img {
+    width: 154px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .mac-store img {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .google-play img {
+    width: 172.5px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .app-store strong, .google-play strong {
+    font-size: 14px;
+  }
+}

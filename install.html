@@ -12,41 +12,49 @@
       <img src="logo.png" alt="Logo">
     </div>
     <h1>Let's get connected</h1>
-    <div class="step">
+    <div class="step" id="step1">
       <h2>1. <a href="#">Install Outline</a></h2>
       <p>Available for Mac, PC, iPad, iPhone, Linux and Android</p>
       <div class="app-stores">
         <div class="app-store">
-          <a href="https://itunes.apple.com/app/outline-app/id1356177741" target="_blank">
+          <a href="https://itunes.apple.com/app/outline-app/id1356177741" target="_blank" class="next-button">
             <img src="appstore.svg" alt="App Store">
           </a>
         </div>
-
         <div class="mac-store">
-          <a href="https://itunes.apple.com/app/outline-app/id1356178125" target="_blank">
+          <a href="https://itunes.apple.com/app/outline-app/id1356178125" target="_blank" class="next-button">
             <img src="macappstore.svg" alt="Mac App Store">
           </a>
         </div>
-
         <div class="google-play">
-          <a href="https://play.google.com/store/apps/details?id=org.outline.android.client" target="_blank">
+          <a href="https://play.google.com/store/apps/details?id=org.outline.android.client" target="_blank" class="next-button">
             <img src="playstore.png" alt="Google Play">
           </a>
         </div>
+
+        <div class="next-manual">
+          <a class="btn next-button">→</a>
+        </div>
       </div>
     </div>
-    <div class="step">
+    
+    <div class="step hidden" id="step2">
       <h2>2. <a href="#">Enter this code</a></h2>
       <p>Click the button or paste the code below to add Math VPN to Outline:</p>
-      <a class="btn" href="ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHa3dRTUpHYVpFeGlIM2pSZlVUTXZJ@143.244.210.44:443/?outline=1&amp;prefix=%13%03%03%3F">
-      Add Math VPN
-      </a>
+      <a class="btn next-button" href="ss://...">Add Math VPN</a>
+
+      <div class="next-manual">
+        <a class="btn next-button">→</a>
+      </div>
+
       <p class="code">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHa3dRTUpHYVpFeGlIM2pSZlVUTXZJ@143.244.210.44:443/?outline=1&prefix=%13%03%03%3F</p>
     </div>
-    <div class="step">
+    
+    <div class="step hidden" id="step3">
       <h2>3. <a href="#">All Done!</a></h2>
       <p>Enjoy 10GB of freedom on us! <a href="#">Refer for more!</a></p>
     </div>
   </div>
+  <script src="install.js"></script>
 </body>
 </html>

@@ -20,6 +20,10 @@ body {
   text-align: left;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn {
   display: inline-block;
   background-color: #ff0000; /* Bootstrap-style green */

@@ -33,14 +33,8 @@
 
     <link rel="stylesheet" href="index.css" />
     <style>
-      body {
-        overflow: auto !important;
-        height: auto !important;
-        min-height: 100vh;
-      }
-      
       .header-center {
-        margin-top: 0 !important;
+        margin-top: 20px;
       }
       
       .chat-container {
@@ -51,24 +45,6 @@
         border: 1px solid #fff;
         margin-top: 30px;
         margin-bottom: 30px;
-      }
-      
-      .chat-header {
-        padding: 20px;
-        border-bottom: 1px solid #666;
-        text-align: center;
-      }
-      
-      .chat-header h2 {
-        color: #ff6666;
-        margin: 0;
-        font-size: 24px;
-      }
-      
-      .chat-header p {
-        color: #fff;
-        margin: 10px 0 0 0;
-        font-size: 14px;
       }
       
       #chat-window {
@@ -229,7 +205,7 @@
       function openIframe() {
         if (window.location !== window.parent.location) {
           var strWindowFeatures = "menubar=no,location=no,height=649,width=1366,directories=no,status=no,scrollbars=no,resizable=no";
-          var URL = "https://white-tree-0dfe7f810.2.azurestaticapps.net/";
+          var URL = "https://retiredlake.com/CanadaMathClient/chat.html";
           var win = window.open(URL, "_blank", strWindowFeatures);
         } else {
           var iframeContainer = document.getElementById("iframe-container");
@@ -312,12 +288,13 @@
     <footer>
       <a title="Private Mode" onclick="openIframe()">
         <p id="pmtoggle">Private Mode</p>
-      </a>      <style>
+      </a>
+      <style>
         body {
           background-color: #111;
           background-image: none;
-          overflow: auto !important;
-          height: auto !important;
+          overflow: auto;
+          height: auto;
           min-height: 100vh;
         }
         .background-link {
@@ -328,10 +305,10 @@
       <a href="#" class="background-link" onclick="changeBackground()">
         Change Background
       </a>
-      <a href="/index.html" class="background-link">
+      <a href="/CanadaMathClient/index.html" class="background-link">
         Back to Home
       </a>
-      <a title="License information" href="credits.html" style="margin-left: auto">Credits</a>
+      <a title="License information" href="/CanadaMathClient/credits.html" style="margin-left: auto">Credits</a>
       <span>Canada Math &copy; 2025</span>
     </footer>
   </body>
